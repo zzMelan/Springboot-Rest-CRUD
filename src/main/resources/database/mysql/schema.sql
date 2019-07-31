@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS sample_rest_crud;
+
+ALTER DATABASE sample_rest_crud
+	DEFAULT CHARACTER SET utf8
+	DEFAULT COLLATE utf8_general_ci;
+
+
+USE sample_rest_crud;
+
+CREATE TABLE users (
+	id INTEGER(11) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	email VARCHAR(100) UNIQUE,
+	username VARCHAR(50) UNIQUE
+);
+
